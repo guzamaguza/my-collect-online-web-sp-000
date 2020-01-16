@@ -4,7 +4,7 @@ def my_collect(array)
   i = 0
   ary = []
   while i < array.length
-    yield if block_given?
+    yield(array[i]) if block_given?
     ary << yield(array[i])
     #name.split(" ").first
     #lang.upcase
